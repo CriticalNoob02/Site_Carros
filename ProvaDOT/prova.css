@@ -1,0 +1,218 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+section{
+    height: 100vh;
+    width: 100vw;
+}
+.banner{
+    max-width: 100vw;
+    max-height: 100vh;
+    background-image: url("./imagens/img1Mod.jpg");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.titulo1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.titulo1 h2{
+    font-size: 4.904rem;
+    color: #040e1f;
+    margin-top: 10vh;
+    font-weight: bold;
+}
+.titulo1 p{
+    font-size: 1.995rem;
+    color: #040e1f;
+}
+main{
+    height: 80vh;
+    width: 100vw;   
+    background-color: #1a2434;
+    padding: 10vh 0;
+}
+.cards{
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    text-align: center;
+}
+.card{
+
+    height: 25rem ;
+    width: 20% ;
+}
+.molde{
+    width: 100%;
+    height:12.5rem;
+    background-color: #040e1f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 3px 3px 3px;
+}
+.img2{
+    width: 95%;
+    height: 95%;
+    background: url(./imagens/img1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.img3{
+    width: 95%;
+    height: 95%;
+    background: url(./imagens/img2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img4{
+    width: 95%;
+    height: 95%;
+    background: url(./imagens/img3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.texto h4{
+    font-size: 1.995rem;
+    font-weight: 400;
+    color: #ffffff;
+    margin-top:5vh;
+    margin-bottom: 2vh;
+}
+.texto p{
+    font-size: 1.0032rem;
+    color: #ffffff;
+
+}
+.descrição-produto{
+    display: flex;
+    align-items:center;
+    justify-content:space-evenly;
+    height: 80vh;
+    width: 100vw;   
+    background-color: #646e80;
+    padding: 10vh 0;
+}
+.descrição-produto .img-redonda{
+    width: 31.25rem;
+    height:31.25rem;
+    border-radius: 50%;
+    background-color: #040e1f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-redonda .img5{
+    width: 90%;
+    height: 90%;
+    background: url(./imagens/Img3-modificada.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.descrição-produto .desc{
+    width: 49%;
+}
+.descrição-produto .desc h4{
+    color: #ffffff;
+    font-size: 3.0096rem;
+}
+.descrição-produto .desc p{
+    font-size: 1.0032rem;
+    color: #ffffff;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 100%;
+    background-color: #1a2434;
+}
+
+footer h4{
+    font-size: 1.995rem;
+    color: #ffffff;
+    margin-top:5vh;
+    margin-bottom: 2vh;
+}
+
+@media (max-width: 450px){
+    section{
+        height: 35vh;
+    }
+    .banner{
+        background-image: url("./imagens/img1Mod.jpg");
+        overflow: hidden;
+        background-size: cover;
+    }
+    .titulo1 h2{
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-size: 1.5rem;
+    }
+    .titulo1 p{
+        font-size: 10px;
+    }
+    main{
+        height: 100%;
+        padding: 5vh 0;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .card{
+        width: 80%;
+    }
+    .texto h4{
+        margin: 1vh 0;
+    }
+    .descrição-produto{
+        flex-direction: column;
+        height: 100%;
+    }
+    .descrição-produto .img-redonda{
+        width: 22.25rem;
+        height: 22.25rem;
+    }
+    .descrição-produto .desc{
+        width: 85vw;
+        padding-top: 5vh;
+        text-align: center;
+    }
+    .descrição-produto .desc h4{
+        font-size: 2.9rem;
+    }
+    .descrição-produto .desc p{
+        padding: 2vh 0;
+        font-size: 1.1rem;
+    }
+    footer{
+        height: 15vh;
+    }
+    footer h4{
+        margin:0;
+    }
+}
+
+
+
+
