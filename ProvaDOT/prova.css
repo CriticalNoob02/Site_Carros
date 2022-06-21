@@ -126,7 +126,6 @@ main{
     background-position: center;
     border-radius: 50%;
 }
-
 .descrição-produto .desc{
     width: 49%;
 }
@@ -138,7 +137,6 @@ main{
     font-size: 1.0032rem;
     color: #ffffff;
 }
-
 footer{
     display: flex;
     align-items: center;
@@ -147,7 +145,6 @@ footer{
     width: 100%;
     background-color: #1a2434;
 }
-
 footer h4{
     font-size: 1.995rem;
     color: #ffffff;
@@ -155,12 +152,12 @@ footer h4{
     margin-bottom: 2vh;
 }
 
+/* Responsividade para celular */
 @media (max-width: 450px){
     section{
         height: 35vh;
     }
     .banner{
-        background-image: url("./imagens/img1Mod.jpg");
         overflow: hidden;
         background-size: cover;
     }
@@ -204,6 +201,124 @@ footer h4{
     .descrição-produto .desc p{
         padding: 2vh 0;
         font-size: 1.1rem;
+    }
+    footer{
+        height: 15vh;
+    }
+    footer h4{
+        margin:0;
+    }
+}
+
+/*responsividade para Tablets*/
+@media (max-width:800px) and (min-width:450px ){
+    section{
+        height: 55vh;
+    }
+    .titulo1{
+        text-align: center;
+        padding: 0 5px;
+    }
+    .titulo1 h2{
+        margin-top: 10px;
+        font-size: 2.8rem;
+    }
+    .titulo1 p{
+        font-size: 1rem;
+    }
+    main{
+        height: 100%;
+        padding: 5vh 0;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .card{
+        width: 80%;
+        height: 100%;
+    }
+    .molde{
+        height: 18.5rem;
+    }
+    .texto h4{
+        margin: 1vh 0;
+    }
+    .texto p{
+        padding-bottom: 5vh;
+        font-size: 1.1rem;
+    }
+    .descrição-produto{
+        flex-direction: column;
+        height: 100%;
+    }
+    .descrição-produto .img-redonda{
+        width: 30.25rem;
+        height: 30.25rem;
+    }
+    .descrição-produto .desc{
+        width: 85vw;
+        padding-top: 5vh;
+        text-align: center;
+    }
+    footer{
+        height: 15vh;
+    }
+    footer h4{
+        margin:0;
+    }
+}
+
+/* Responsividade para telas medias */
+@media (max-width:1050px) and (min-width:800px ){
+    .titulo1{
+        text-align: center;
+        padding: 25px 5px;
+    }
+    .titulo1 h2{
+        margin-top: 10px;
+        font-size: 4rem;
+    }
+    .titulo1 p{
+        font-size: 1.7rem;
+    }
+    main{
+        height: 100%;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .card{
+        width: 70%;
+        height: 100%;
+    }
+    .molde{
+        height: 19.5rem;
+    }
+    .texto h4{
+        margin: 1vh 0;
+    }
+    .texto p{
+        font-size: 1.2rem;
+        padding-bottom: 5vh;
+    }
+    .descrição-produto{
+        flex-direction: column;
+        height: 100%;
+    }
+    .descrição-produto .img-redonda{
+        width: 50.25rem;
+        height: 50.25rem;
+    }
+    .descrição-produto .desc{
+        width: 85vw;
+        padding-top: 5vh;
+        text-align: center;
+    }
+    .descrição-produto .desc p{
+        font-size: 1.2rem;
+    }
+    .descrição-produto .desc h4{
+        font-size: 4rem;
     }
     footer{
         height: 15vh;
